@@ -10,6 +10,12 @@ class Computer{
 			System.out.println("in Chip class");
 		}
 	}
+	static class Board{
+		int boardNumber = 13;
+		public void print() {
+			System.out.println("in Board class");
+		}
+	}
 }
 public class NonStaticInnerClass {
 
@@ -20,6 +26,8 @@ public class NonStaticInnerClass {
 		chip.config();
 		System.out.println(chip.chipNumber);
 		System.out.println(computer.number);
+		Computer.Board  board =  new Computer.Board();
+		board.print();
 
 	}
 
