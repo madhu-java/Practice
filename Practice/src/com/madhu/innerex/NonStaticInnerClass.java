@@ -17,6 +17,9 @@ class Computer{
 		}
 	}
 }
+ abstract class Driver{
+	abstract void installDriver();
+}
 public class NonStaticInnerClass {
 
 	public static void main(String[] args) {
@@ -26,8 +29,19 @@ public class NonStaticInnerClass {
 		chip.config();
 		System.out.println(chip.chipNumber);
 		System.out.println(computer.number);
+		//inner static class
 		Computer.Board  board =  new Computer.Board();
 		board.print();
+		//annonymous class
+		Driver driver  = new Driver() {
+			
+			@Override
+			void installDriver() {
+				System.out.println("installing driver");
+				
+			}
+		};
+		driver.installDriver();
 
 	}
 
