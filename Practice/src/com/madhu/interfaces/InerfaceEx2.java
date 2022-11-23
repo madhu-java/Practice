@@ -6,6 +6,7 @@ interface IDemo1{
 	}
 interface IDemo2{
 	public abstract void m1();
+	//public abstract int m1();//not valid
 	void m3();
 	}
 public class InerfaceEx2 implements IDemo1,IDemo2 {
@@ -13,6 +14,10 @@ public class InerfaceEx2 implements IDemo1,IDemo2 {
 	public void m1() {
 		System.out.println("Iam a common method in 2 interfaces");
 	}
+	//not valid
+//	public int m1() {
+//		System.out.println("Iam a common method in 2 interfaces");
+//	}
 	public void m2() {
 		System.out.println("Iam from Idemo1");
 	}
