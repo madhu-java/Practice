@@ -6,9 +6,19 @@ public class Exception1 {
 		double res = a/b;
 		System.out.println( res);
 		}
-		catch(ArithmeticException e){
+		
+		catch(NumberFormatException e) {
 			System.out.println(e);
 		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+//		catch(ArithmeticException e){//this catch is unreachable
+//			System.out.println(e);
+//		}
+		
+		System.out.println("You have division successfully");
+		
 	}
 
 	public static void main(String[] args) {
