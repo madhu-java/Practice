@@ -31,6 +31,8 @@ class Applicant{
 			UnderAgeException underAgeException  = new UnderAgeException
 					("you are under 18");
 			throw underAgeException;
+		}else {
+			System.out.println("you are eligible");
 		}
 	}
 }
@@ -45,15 +47,17 @@ class RTO{
 			applicant.verify();
 		} catch (UnderAgeException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.toString();
 			try {
 
 				applicant.inpit();
 				applicant.verify();
 			} catch (UnderAgeException ex) {
 				// TODO Auto-generated catch block
-				ex.printStackTrace();
+				ex.toString();
+				System.out.println("you are not eligible");
 				System.exit(0);
+				
 		}
 		
 	}
