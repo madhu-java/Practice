@@ -10,7 +10,8 @@ public class ThreadEx {
 
 	public static void main(String[] args) {
 		MyThread myThread = new MyThread();
-		myThread.start();
+//		myThread.start();
+		myThread.run();
 		for(int i=0;i<=5;i++) {
 			System.out.println("main thread:"+i);
 		}
