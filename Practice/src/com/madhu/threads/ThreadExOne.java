@@ -11,7 +11,7 @@ class MyThread1 extends Thread{
 		System.out.println(Thread.currentThread().getName());
 	}
 	public void start() {
-		super.start();
+		//super.start();
 		System.out.println("start method");
 	}
 }
@@ -25,7 +25,8 @@ public class ThreadExOne {
 //		myThread.run();
 //		myThread.run(5);
 		System.out.println("main thread");
-		System.out.println(Thread.currentThread().getName());
+		//myThread.start();
+		//System.out.println(Thread.currentThread().getName());
 		
 
 	}
