@@ -26,6 +26,9 @@ public class NewInstance {
 		Student student = (Student)object;
 		student.setId(100);
 		student.getId();
+		Student student2 = new Student();
+		student2.setId(200);
+		student2.getId();
 		
 		
 
