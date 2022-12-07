@@ -15,6 +15,9 @@ class Display0{
 		System.out.println("sum of first "+n+" numbers is "+sum);
 		
 	}
+	public void hello(){
+		System.out.println("Helooooo");
+	}
 }
 class SumThread extends Thread{
 	Display0 d;
@@ -32,10 +35,16 @@ public class SyncEx2 {
 	public static void main(String[] args) {
 
 Display0 display = new Display0();
+Display0 display1 = new Display0();
 SumThread s1= new SumThread(display, 5);
+
 SumThread s2= new SumThread(display, 10);
+SumThread s3= new SumThread(display1, 7);
 s1.start();
+display.hello();
 s2.start();
+display.hello();
+s3.start();
 
 	}
 
