@@ -15,9 +15,9 @@ class Display{
 	}
 }
 class MyThread0 extends Thread{
-	Display d;
+	Display11 d;
 	String name;
-	public MyThread0(Display d, String name) {
+	public MyThread0(Display11 d, String name) {
 		this.d = d;
 		this.name =name;
 	}
@@ -30,7 +30,7 @@ class MyThread0 extends Thread{
 public class SyncEx1 {
 
 	public static void main(String[] args) {
-		Display d = new Display();
+		Display11 d = new Display11();
 		MyThread0 myThread0 = new MyThread0(d, "madhu");
 		MyThread0 myThread1 = new MyThread0(d, "madhu00");
 		myThread0.start();
