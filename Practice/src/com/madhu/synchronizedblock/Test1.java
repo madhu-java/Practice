@@ -26,7 +26,7 @@ public class Test1 {
 	public static void main(String[] args) throws InterruptedException {
 		ThreadN t= new ThreadN();
 		t.start();
-		//Thread.sleep(1000);
+		Thread.sleep(1000);
 		synchronized (t) {
 			System.out.println("main thread waiting for t object");
 			//Thread.sleep(1000);
