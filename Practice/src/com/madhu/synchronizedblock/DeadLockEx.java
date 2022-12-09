@@ -14,7 +14,7 @@ class A{
 			}
 		b.last();
 	}
-	public void last() {
+	public  synchronized void last() {
 		System.out.println("class A last():");
 	}
 
@@ -31,7 +31,7 @@ class B{
 			}
 		a.last();
 	}
-	public void last() {
+	public  synchronized void last() {
 		System.out.println("class B last():");
 	}
 
@@ -46,7 +46,7 @@ public class DeadLockEx  extends Thread{
 		a.d1(b);
 		
 	}
-	public void run() {
+	public  void run() {
 		b.d2(a);
 	}
 	public static void main(String args[]) {
