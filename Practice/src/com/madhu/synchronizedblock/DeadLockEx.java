@@ -3,7 +3,7 @@ package com.madhu.synchronizedblock;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
 class A{
-	public void d1(B b) {
+	public  synchronized void d1(B b) {
 		System.out.println("Thread-1 starts execution of d1:");
 		
 			try {
@@ -20,7 +20,7 @@ class A{
 
 }
 class B{
-	public void d2(A a) {
+	public synchronized void d2(A a) {
 		System.out.println("Thread-1 starts execution of d1:");
 		
 			try {
