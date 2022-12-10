@@ -44,6 +44,16 @@ public class LinkedListEx {
 		linkedList.offerFirst(200);
 		linkedList.offerLast(0);
 		System.out.println(linkedList);
+		linkedList.remove();
+		System.out.println(linkedList);
+		linkedList.remove();
+		System.out.println(linkedList);
+		linkedList.removeLast();
+		System.out.println(linkedList);
+		
+		System.out.println(linkedList.contains(10));
+		linkedList.clear();
+		System.out.println(linkedList);
 		
 		
 		
