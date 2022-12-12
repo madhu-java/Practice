@@ -1,6 +1,8 @@
 package com.madhu.collections;
 
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.PriorityQueue;
 
 public class PQueue {
@@ -20,6 +22,14 @@ public class PQueue {
 		  Iterator iterator= pQueue.iterator();
 		  while(iterator.hasNext()) {
 			  System.out.println(iterator.next());
+		  }
+		  //reverse
+		  System.out.println("Reverse order");
+		  LinkedList linkedList=new LinkedList();
+		  linkedList.addAll(pQueue);
+		  ListIterator listI= linkedList.listIterator(linkedList.size());
+		  while(listI.hasPrevious()) {
+			  System.out.println(listI.previous());
 		  }
 
 	}
