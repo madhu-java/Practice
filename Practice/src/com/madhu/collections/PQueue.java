@@ -15,6 +15,7 @@ public class PQueue {
 		pQueue.add(25);
 		pQueue.add(175);
 		pQueue.add(125);
+		//pQueue.add("madhu");
 		System.out.println(pQueue);
 //		for(Object obj:pQueue) {
 //			System.out.println(obj);
@@ -30,6 +31,10 @@ public class PQueue {
 		  ListIterator listI= linkedList.listIterator(linkedList.size());
 		  while(listI.hasPrevious()) {
 			  System.out.println(listI.previous());
+		  }
+		  Iterator iterator2=linkedList.descendingIterator();
+		  while(iterator2.hasNext()) {
+			  System.out.println(iterator2.next());
 		  }
 
 	}
