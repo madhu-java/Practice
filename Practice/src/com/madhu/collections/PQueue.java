@@ -36,6 +36,7 @@ public class PQueue {
 		  while(iterator2.hasNext()) {
 			  System.out.println(iterator2.next());
 		  }
+		  
 
 	}
 
