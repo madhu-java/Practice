@@ -1,7 +1,9 @@
 package com.madhu.collections;
 
+import java.awt.List;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class VectorEx {
@@ -23,7 +25,8 @@ public class VectorEx {
 	while(enumeration.hasMoreElements()) {
 		System.out.println(enumeration.nextElement());
 	}
-
+	LinkedList linkedList=new LinkedList();
+	linkedList.peek();
 	}
-
+	List l=new LinkedList();
 }
