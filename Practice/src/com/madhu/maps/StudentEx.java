@@ -3,6 +3,7 @@ package com.madhu.maps;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Set;
 
 class Student{
 	private int id;
@@ -47,7 +48,12 @@ Iterator itr1=collection.iterator();
 while(itr1.hasNext()) {
 	System.out.println(itr1.next());
 }
-System.out.println("usin");
+System.out.println("usin keySet");
+Set set=hMap.keySet();
+Iterator itr2=set.iterator();
+while(itr2.hasNext()) {
+	System.out.println(itr2.next());
+}
 
 	}
 
