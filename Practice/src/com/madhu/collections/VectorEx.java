@@ -28,5 +28,5 @@ public class VectorEx {
 	LinkedList linkedList=new LinkedList();
 	linkedList.peek();
 	}
-	List l=new LinkedList();
+	//List l=new LinkedList();
 }
