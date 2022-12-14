@@ -3,6 +3,8 @@ package com.madhu.maps;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 class Student{
@@ -53,6 +55,13 @@ Set set=hMap.keySet();
 Iterator itr2=set.iterator();
 while(itr2.hasNext()) {
 	System.out.println(itr2.next());
+}
+System.out.println("using entryset");
+Set set2=hMap.entrySet();
+Iterator iterator=set2.iterator();
+while(iterator.hasNext()) {
+	Map.Entry data=(Entry) iterator.next();
+	System.out.println("key:"+data.getKey()+" "+"value:"+data.getValue());
 }
 
 	}
