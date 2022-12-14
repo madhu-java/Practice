@@ -1,6 +1,8 @@
 package com.madhu.maps;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 
 class Student{
 	private int id;
@@ -20,6 +22,10 @@ class Student{
 		this.name=name;
 		this.course= course;
 	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", course=" + course + "]";
+	}
 	
 	
 }
@@ -35,6 +41,13 @@ hMap.put(1, st1);
 hMap.put(2, st2);
 hMap.put(3, st3);
 System.out.println(hMap);
+System.out.println("using values");
+Collection collection=hMap.values();
+Iterator itr1=collection.iterator();
+while(itr1.hasNext()) {
+	System.out.println(itr1.next());
+}
+System.out.println("usin");
 
 	}
 
