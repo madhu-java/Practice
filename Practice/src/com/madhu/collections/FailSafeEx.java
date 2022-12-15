@@ -1,6 +1,7 @@
 package com.madhu.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class FailSafeEx {
 
@@ -10,11 +11,16 @@ public class FailSafeEx {
 		aList.add(24);
 		aList.add(34);
 		System.out.println(aList);
-		for(int i=0;i<aList.size();i++) {
-			System.out.println(aList.get(i));
-			aList.add(0);
+		//structural modifications will lead to infinite loop using for loop
+//		for(int i=0;i<aList.size();i++) {
+//			System.out.println(aList.get(i));
+//			aList.add(0);
+//		}
+		Iterator iterator=aList.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+			aList.add(100);
 		}
-
 	}
 
 }
