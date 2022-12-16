@@ -74,8 +74,8 @@ public static void checkValidity(HashMap hMap) throws InvalidPassportNumber {
 
 }
 	public static void main(String[] args) {
-		PersonalInfo p1=new PersonalInfo("Madhu", 7, "Mel");
-		PersonalInfo p2=new PersonalInfo("Madhu11", 97, "CBR");
+		PersonalInfo p1=new PersonalInfo("Madhu", 7, "Bgl");
+		PersonalInfo p2=new PersonalInfo("Madhu11", 97, "HYD");
 		PersonalInfo p3=new PersonalInfo("Madhu22", 87, "SYD");
 		HashMap hMap= new HashMap();
 		hMap.put(10, p1);
