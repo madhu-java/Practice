@@ -1,6 +1,8 @@
 package com.madhu.generics;
 
+import java.awt.List;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 import javax.naming.ReferralException;
 
@@ -28,6 +30,17 @@ public class GenericsEx {
 		int i = (Integer)aList.get(0);
 		System.out.println(string);
 		System.out.println(i);
-	}
+		
+		//generics solves typecasting and typesafe problems
+		ArrayList<String> aStrings= new ArrayList<String>();
+		//aStrings.add(10);
+		aStrings.add("aa");
+		aStrings.add("BBB");
+		aStrings.add("CCCC");
+		System.out.println(aStrings);
+		List<String> aList2 = new ArrayList<String>();
+		//List<Object> aList3 = new LinkedList<String>();
+		
+		}
 
 }
