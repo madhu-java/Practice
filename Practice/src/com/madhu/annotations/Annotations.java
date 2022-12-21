@@ -12,11 +12,12 @@ import java.net.Authenticator.RequestorType;
 @Retention(RetentionPolicy.RUNTIME)//till what point we want to retaing the annotation
 
 @interface CricketPlayer{
-	int runs();
-	String country();
+	int runs() default 20000;//anotherway of assigning values
+	String country()default "IND";
 }
 
-@CricketPlayer(country = "IND", runs = 20000)
+//@CricketPlayer(country = "IND", runs = 20000)
+@CricketPlayer
 class ViratKohli{
 	private int innings;
 	private String name;
