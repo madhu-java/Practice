@@ -38,7 +38,7 @@ public class GenericsEx {
 		aStrings.add("BBB");
 		aStrings.add("CCCC");
 		System.out.println(aStrings);
-		List<String> aList2 = new ArrayList<String>();
+		//List<String> aList2 = new ArrayList<String>();
 		//List<Object> aList3 = new LinkedList<String>();
 		
 		}
