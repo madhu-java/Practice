@@ -30,7 +30,12 @@ public class FilterEx {
 		//change each object
 		List<Integer> mapList=aList.stream().map(i->i*2).collect(Collectors.toList());
 		mapList.forEach(System.out::println);
-
-			}
+//count
+		
+		long evenCount=aList.stream().filter(i->i%2==0).count();
+		System.out.println("even numbers count:"+evenCount);
+	
+	
+	}
 
 }
