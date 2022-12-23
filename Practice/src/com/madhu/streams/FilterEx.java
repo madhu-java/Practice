@@ -42,9 +42,11 @@ public class FilterEx {
 	System.out.println("sorted list");
 	sortedList.forEach(System.out::println);
 	
+	//ascending sorted order
+	List<Integer> ascList=aList.stream().sorted((a,b)->b.compareTo(a)).collect(Collectors.toList());
 	
-	
-	
+	System.out.println("ascending order");
+	ascList.forEach(System.out::println);
 	
 	
 	
