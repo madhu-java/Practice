@@ -11,6 +11,12 @@ public class AlGeneerics {
 //		aList.add(true);
 		System.out.println("in main:"+aList);
 		methodOne(aList);
+		ArrayList<Integer> IList = new ArrayList<>();
+		IList.add(10);
+//		IList.add("madhu");
+//		IList.add(true);
+		System.out.println("in main integer list:"+IList);
+		methodOne(IList);
 
 	}
 	public static void methodOne(ArrayList al) {
