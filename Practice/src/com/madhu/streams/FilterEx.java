@@ -35,6 +35,24 @@ public class FilterEx {
 		long evenCount=aList.stream().filter(i->i%2==0).count();
 		System.out.println("even numbers count:"+evenCount);
 	
+	//sorted with natural sorting order
+		
+		List<Integer> sortedList=aList.stream().sorted().collect(Collectors.toList());
+	
+	System.out.println("sorted list");
+	sortedList.forEach(System.out::println);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	}
 
