@@ -26,6 +26,10 @@ public class FilterEx {
 		//usng streams
 		List<Integer> eList=aList.stream().filter(i->i%2==0).collect(Collectors.toList());
 		System.out.println("usimg streams:"+eList);
+		
+		//change each object
+		List<Integer> mapList=aList.stream().map(i->i*2).collect(Collectors.toList());
+		mapList.forEach(System.out::println);
 
 			}
 
