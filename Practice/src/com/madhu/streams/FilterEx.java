@@ -51,9 +51,14 @@ public class FilterEx {
 	    Integer mInteger=aList.stream().min((i1,i2)->i1.compareTo(i2)).get();
 	
 	System.out.println("min o the list"+mInteger);
+	Integer maInteger= aList.stream().max((a,b)->a.compareTo(b)).get();
+	System.out.println("max value of the list:"+maInteger);
 	
-	
-	
+	//toArray--to convertthe collection to array
+	Object[]objects = aList.stream().toArray();
+	for(Object object:objects) {
+		System.out.println(object);
+	}
 	
 	
 	
