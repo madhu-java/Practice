@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FilterEx {
 
@@ -53,17 +54,29 @@ public class FilterEx {
 	System.out.println("min o the list"+mInteger);
 	Integer maInteger= aList.stream().max((a,b)->a.compareTo(b)).get();
 	System.out.println("max value of the list:"+maInteger);
-	
+	System.out.println("printing  array");
 	//toArray--to convertthe collection to array
 	Object[]objects = aList.stream().toArray();
 	for(Object object:objects) {
 		System.out.println(object);
 	}
+	System.out.println("printing integer array");
 	//to convert a collection to int array
 	Integer[] integers=aList.stream().toArray(Integer[]::new);
 	for(Integer integer:integers ) {
 		System.out.println(integer);
 	}
+	//stream.of()
+	System.out.println("using stream.of()");
+	Stream stream = Stream.of(9,99,999,9999,99999);
+	stream.forEach(System.out::println);
+	Double[] double1 = {10.0,10.01,10.02,10.03};
+	Stream stream2 = Stream.of(double1);
+	System.out.println(stream2);
+	stream2.forEach(System.out::println);
+	
+	
+	
 	
 	
 	}
