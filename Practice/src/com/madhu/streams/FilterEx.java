@@ -59,8 +59,11 @@ public class FilterEx {
 	for(Object object:objects) {
 		System.out.println(object);
 	}
-	
-	
+	//to convert a collection to int array
+	Integer[] integers=aList.stream().toArray(Integer[]::new);
+	for(Integer integer:integers ) {
+		System.out.println(integer);
+	}
 	
 	
 	}
