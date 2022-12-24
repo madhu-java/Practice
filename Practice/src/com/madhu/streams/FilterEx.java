@@ -47,8 +47,10 @@ public class FilterEx {
 	
 	System.out.println("ascending order");
 	ascList.forEach(System.out::println);
+	//min and max
+	    Integer mInteger=aList.stream().min((i1,i2)->i1.compareTo(i2)).get();
 	
-	
+	System.out.println("min o the list"+mInteger);
 	
 	
 	
