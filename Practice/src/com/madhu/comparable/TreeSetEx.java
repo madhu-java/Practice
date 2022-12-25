@@ -28,6 +28,9 @@ public class TreeSetEx {
 		//classcast exception bcos StringBuffer doesn't implement 
 		//comparable
 		System.out.println(treeSet2);
+		System.out.println("A".compareTo("S"));
+		System.out.println("S".compareTo("A"));
+		System.out.println("A".compareTo("A"));
 		
 
 	}
