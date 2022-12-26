@@ -1,5 +1,6 @@
 package com.madhu.comparator;
 
+import java.util.Comparator;
 import java.util.TreeSet;
 
 class Student implements Comparable{
@@ -31,10 +32,18 @@ class Student implements Comparable{
 	}
 	
 }
+class MyComparator implements Comparator{
+	public int compare(Object obj1, Object obj2) {
+		Student s1= (Student)obj1;
+		Student s2= (Student)obj2;
+		return s1.name.compareTo(s2.name);
+		
+	}
+}
 public class ComparatorEx1 {
 
 	public static void main(String[] args) {
-		TreeSet treeSet = new TreeSet();
+		TreeSet treeSet = new TreeSet(new MyComparator());
 		Student s1= new Student(10, "MMMM");
 		Student s2= new Student(20, "AAAA");
 		Student s3= new Student(70, "BBBB");
