@@ -21,6 +21,9 @@ public class PredicateEx {
       String string= "Hello";
       Predicate<String> predicate2 = str->str.length()>3;
       System.out.println(string+" length is > 3:"+predicate2.test(string));
+	
+	
+	
 	}
 
 }
