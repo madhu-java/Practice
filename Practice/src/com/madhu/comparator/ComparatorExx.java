@@ -1,4 +1,4 @@
-package com.madhu.comparable;
+package com.madhu.comparator;
 
 import java.util.Comparator;
 import java.util.TreeSet;
