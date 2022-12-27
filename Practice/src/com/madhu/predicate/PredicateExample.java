@@ -15,6 +15,8 @@ int[] arr = {5,10,12,22,20,18,14,9,7,3,13};
 methodOne(p1.and(p2), arr);
 System.out.println("11111111111111111111111111111111111111111");
 methodOne(p1.or(p2), arr);
+System.out.println("negate:");
+methodOne(p1.negate(), arr);
 
 
 	}
