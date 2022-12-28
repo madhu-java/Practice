@@ -3,8 +3,8 @@ class Sample{
 	private String string;
 	public Sample(String string) {
 		this.string=string;
-		System.out.println("constructor executed"+string);
-		System.out.println();
+		System.out.println("constructor executed:"+string);
+		
 	}
 }
 
@@ -16,9 +16,10 @@ public class ConstructorReference {
 	public static void main(String[] args) {
 		inter in = s->new Sample(s);
 		System.out.println();
-		in.m1("this is constructor interface");
+		in.m1("this is lambda expression");
 		
-		
+		inter in1 = Sample::new;
+		in1.m1("this is constructor reference");
 
 	}
 
