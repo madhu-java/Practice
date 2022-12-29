@@ -25,6 +25,8 @@ public class ConsumerEx {
         names.forEach(consumer2);
         //lambda expression
         names.forEach(name->System.out.println(name));
+        //method reference
+        names.forEach(System.out::println);
         
         
 	}
