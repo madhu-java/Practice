@@ -27,6 +27,14 @@ public class Createafile {
 		System.out.println("is f2 a directoty:"+f2.isDirectory());
 		System.out.println("is f2 a File:"+f2.isFile());
 		
+		//crete  a directory at a specified location
+		String location = "C:\\Users\\madha\\Desktop\\JAVAT\\Basics\\files";
+		File f3 = new File(location);
+		f3.mkdir();
+		File f4= new File(f3,"java.txt");
+		f4.createNewFile();
+		
+		
 
 	}
 
