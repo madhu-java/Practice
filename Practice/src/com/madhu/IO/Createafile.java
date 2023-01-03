@@ -20,9 +20,12 @@ public class Createafile {
 		File f1= new File("Dir");
 		f1.mkdir();
 		System.out.println("is f1 a directoty:"+f1.isDirectory());
+		System.out.println("is f1 a File:"+f1.isFile());
 		//creating a file in a directory
 		File f2 = new File(f1,"fil12.txt");
-		System.out.println("is f1 a directoty:"+f2.isDirectory());
+		f2.createNewFile();
+		System.out.println("is f2 a directoty:"+f2.isDirectory());
+		System.out.println("is f2 a File:"+f2.isFile());
 		
 
 	}
