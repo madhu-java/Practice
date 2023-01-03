@@ -13,7 +13,10 @@ public class Createafile {
 		System.out.println(file.exists());
 		String directoryName= "ABC.txt";
 		
-		
+		File file1 = new File(directoryName);
+		System.out.println(file1.exists());
+		file1.mkdir();
+		System.out.println(file1.exists());
 
 	}
 
