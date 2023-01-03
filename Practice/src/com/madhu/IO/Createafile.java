@@ -17,6 +17,13 @@ public class Createafile {
 		System.out.println(file1.exists());
 		file1.mkdir();
 		System.out.println(file1.exists());
+		File f1= new File("Dir");
+		f1.mkdir();
+		System.out.println("is f1 a directoty:"+f1.isDirectory());
+		//creating a file in a directory
+		File f2 = new File(f1,"fil12.txt");
+		System.out.println("is f1 a directoty:"+f2.isDirectory());
+		
 
 	}
 
