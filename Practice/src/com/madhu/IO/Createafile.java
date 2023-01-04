@@ -2,6 +2,7 @@ package com.madhu.IO;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.jar.Attributes.Name;
 
 public class Createafile {
 
@@ -28,13 +29,47 @@ public class Createafile {
 		System.out.println("is f2 a File:"+f2.isFile());
 		
 		//crete  a directory at a specified location
-		String location = "C:\\Users\\madha\\Desktop\\JAVAT\\Basics\\files";
-		File f3 = new File(location);
-		f3.mkdir();
-		File f4= new File(f3,"java.txt");
-		f4.createNewFile();
+		String location = "C:\\Users\\madha\\Desktop\\JAVAT";
+//		File f3 = new File(location);
+//		f3.mkdir();
+//		File f4= new File(f3,"java.txt");
+//		f4.createNewFile();
+		
+		int directories=0;
+		int files=0;
+		int jpgFileCount=0;
+		int textFileCount=0;
+		int javaFileCount=0;
+		
+		String location1= "C:\\Users\\madha\\Desktop\\JAVAT\\Basics";
+		File f5= new File(location1);
+		System.out.println(f5.list());
+		String[] listOfFiles = f5.list();
+		for(String s: listOfFiles ) {
+			File filename = new File(f5,s);
+			if(filename.isFile()) {
+				files++;
+				if(s.endsWith(".jpg")) {
+					jpgFileCount++;
+				}
+				if(s.endsWith(".txt")) {
+					textFileCount++;
+				}
+				if(s.endsWith(".java")) {
+					javaFileCount++;
+				}
+			}
+			if(filename.isDirectory()) {
+				directories++;
+			}
+		}
 		
 		
+		System.out.println("no. of files:"+files);
+		System.out.println("no.of directoies:"+directories);
+		System.out.println("no. of .jpg files:"+jpgFileCount);
+		System.out.println("no. of.txt  files:"+textFileCount);
+		System.out.println("no. of.java  files:"+javaFileCount);
 
 	}
 
