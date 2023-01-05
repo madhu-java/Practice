@@ -16,6 +16,7 @@ public class Filereader {
 			i=fileReader.read();
 			System.out.println(i);
 		}
+		//File f = new File("file2.txt",true);
 		File f = new File("file2.txt");
 		//System.out.println(i);
 		FileReader fileReader2 = new FileReader(f);
