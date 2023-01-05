@@ -1,5 +1,7 @@
 package com.madhu.IO;
 
+import java.io.DataOutput;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,7 +16,15 @@ public class Filereader {
 			i=fileReader.read();
 			System.out.println(i);
 		}
+		File f = new File("file2.txt");
 		//System.out.println(i);
+		FileReader fileReader2 = new FileReader(f);
+		char[] charArray = new char[(int)f.length()];
+		fileReader2.read(charArray);
+		for( char ch:charArray ) {
+			System.out.print(ch);
+		}
+		System.out.println(":over");
 	}
 
 }
