@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.sound.midi.Soundbank;
-
+//only copy the unique phone numbers from the old file and write them to new file
 public class CopyUniqvaluetoaFile {
 
 	public static void main(String[] args) throws IOException {
