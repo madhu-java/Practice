@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import javax.swing.plaf.synth.SynthTextPaneUI;
 
-public class JdbcExample1 {
+public class JdbcExample2 {
 
 	public static void main(String[] args) {
 		Connection connection=null;
@@ -15,13 +15,13 @@ try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	System.out.println("Driver has loaded...");
 	
-	//step2:establish the connection
-	String url ="jdbc:mysql://localhost:3306/madhavi";
-	String userName="root";
-	String passWord="root";
-	connection=DriverManager.getConnection(url, userName, passWord);
-	System.out.println("implementation class name:"+connection.getClass().getName());;
-} catch (ClassNotFoundException | SQLException e) {
+//	//step2:establish the connection
+//	String url ="jdbc:mysql:/localhost:3306/bank";
+//	String userName="root";
+//	String passWord="root";
+//	connection=DriverManager.getConnection(url, userName, passWord);
+	
+} catch (ClassNotFoundException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
 }
