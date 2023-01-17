@@ -33,6 +33,15 @@ try {
 	resultSet = statement.executeQuery(sqlQuery);
 	System.out.println("implement classs name:"+resultSet.getClass().getName());
 	
+	//step4: process the result set
+	System.out.println("bankId\tbankbranch\tbankname");
+	while(resultSet.next()) {
+		Integer bid = resultSet.getInt(1);
+		String bbranch= resultSet.getString(2);
+		String bname= resultSet.getString(3);
+		System.out.println(bid+"\t"+bbranch+"\t"+bname);
+	}
+	
 } catch (ClassNotFoundException | SQLException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
