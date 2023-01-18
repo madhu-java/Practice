@@ -45,6 +45,16 @@ try {
 } catch (ClassNotFoundException | SQLException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
+}finally {// step:6: close the connection
+	if(connection!=null) {
+		try {
+			connection.close();
+			System.out.println("connection closed");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
 
 
